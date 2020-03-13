@@ -1,0 +1,36 @@
+/* :root {
+    --mainColor: #42b883;
+    --listSize: 25px;
+    --listBorder: 1px solid lightblue;
+  }
+   root는 최상의 구성요소 
+  최상의에 전역 변수들 선언 
+  
+  li {
+    font-size: var(--listSize);
+    color: var(--mainColor);
+    border: var(--listBorder);
+    width: min-content;
+  }
+  전역 변수로 선언한 변수를 사용가능.
+  
+  ul {
+    list-style: none;
+    --mainColor: #42b883; 로 지역 변수를 선언했다면 ul밑에 있는 div들만 메인 컬러 사용 가능.
+  } */
+
+@custom-selector :--headers h1, h2, h3, h4, h5, h6;
+
+:--headers {
+  margin-block: 0;
+  color: #42b883;
+}
+
+@custom-media --ipad-size (650px <= width < 850px);
+/* 창의 크기가 650px<w<85px일때 배경색이 바뀜. */
+
+@media(min-width: 650px) and (max-width: 849px) {
+    body {
+      background-color: beige;
+    }
+  }

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .father {
+            display: grid;
+            grid-gap: 10px;
+            grid-auto-rows: 100px;
+            grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+            /* auto-fit은 contents 로 grid-container 를 최대한 채우는 속성*/ 
+            /* auto-fit은 minmax랑 써야 효과적 
+            auto-fit은 최대한 많은 컬럼이 minmax가 적용되게 도와줌. */
+            /* grid-template-columns: repeat(auto-fit, 100px, 1fr); 
+            만 쓰게 되면 창이 줄여졌을때 빈공간이 남았는데도 밑으로 div가 내려가는 걸 볼수 있음 그래서 minmax랑 같이 써야 이것을 방지할 수 있음. */
+            /* grid-template-columns: repeat(auto-fill, minmax(50px, 1fr)); */
+            /* auto-fill은 가능한 많은 cell 로 grid-container 를 채우는 속성은 고스트 셀이 생김. */
+        }
+
+        .box:nth-child(even) {
+            background-color: orange;
+        }
+
+        .box:nth-child(odd) {
+            background-color: orangered;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="father">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+</body>
+
+</html>

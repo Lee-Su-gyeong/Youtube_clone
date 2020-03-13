@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .father {
+            display: grid;
+            grid-gap: 10px;
+            grid-auto-rows: 100px;
+            grid-template-columns: repeat(5, 100px);
+			background-color: beige;
+            height: 100vh;
+
+            /* justify-content: center; */
+            /* 가로 가운데 정렬 */
+            /* align-content: center;  */
+            /*세로 가운데 정렬 */
+            /* place-content: center center; */
+            /* 수직 수평 순으로 center */
+            /* place-content: end center; */
+            /* 맨 밑줄 가로 가운데. */
+            place-content: center;
+            /* 둘다 가운데  */
+            /* justify-items: center; */
+            /* 그리드 컨텐츠 맞게 크기가 작아지고 가운데로 정렬됨. items를 쓰면 컨텐츠에 맞게 작아짐. */
+            /* align-items: center; */
+            /* 아이템 수평 가운데 정렬 */
+            /* place-items: center; */
+            /* 아이템 수평 수직 가운데 정렬 */
+
+
+
+        }
+        .box:first-child{
+            /* justify-self: center; */
+            /* align-self: center; */
+            /* place-self: center; */
+            /*  place-self: center;은 justify-self: center; , align-self: center; 두개 다 쓸 때와 같아짐. */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .box:nth-child(even) {
+            background-color: lightblue;
+        }
+
+        .box:nth-child(odd) {
+            background-color: lightcoral;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="father">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+        <div class="box">5</div>
+    </div>
+</body>
+
+</html>

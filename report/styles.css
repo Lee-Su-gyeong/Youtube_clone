@@ -1,0 +1,352 @@
+:root{
+    --navColor:lightblue;
+    --navHeight:56px;  
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    height: var(--navHeight);
+    padding: 0px 16px;
+    display: grid;
+    grid-template-columns: 4fr 12fr 90fr repeat(4,40px);
+    align-items: center;
+    position: fixed;
+    background-color: white;
+}
+.menu{
+    padding: 8px; 
+}
+.y_logo{
+    height: 24px;
+    line-height: 56px;
+}
+.search{
+    background-color: white;
+    margin: 0px 40px;
+    display: grid;
+    grid-template-columns: 70% 65px;
+    place-content: center;
+
+}
+#search_bar{
+    height: 32px;
+    float: left;
+    padding: 0px 10px;
+    box-sizing: border-box;
+    font-size: 16px;
+    color:lightslategray;
+    border-radius: 2px 0px 0px 2px;
+    border: 1px solid lightgray;
+}
+#submit{
+    height: 32px;
+    float: left;
+    border: 1px solid lightgray;
+    text-align: center;
+    
+}
+#icon_bar{
+    color: red;
+}
+.icon_box {
+    border: 1px solid black;
+}
+.icon_search{
+    display: none;
+}
+main{
+    display: grid;
+    grid-template-columns:1fr 5fr;
+}
+.menu_left{
+    overflow-y: hidden;
+    
+}
+.menu_left:hover { 
+    overflow-y: scroll;
+    height: 1400px;}
+i{
+    font-size: 20px;
+    margin-right: 20px;
+    color:#606060;
+}
+
+.fas fa-bars{
+    font-size: 24px;
+}
+#uesr_circle{
+    font-size: 35px;
+}
+.subscri{
+    margin-bottom: 12px;
+}
+
+.sub2{
+    border-top: 1px solid lightgrey;
+    margin-top: 12px !important;
+}
+.menu_box_1{
+    padding: 12px 0px;
+    border-bottom: 1px solid lightgrey;
+    margin-top: 56px;
+    
+}
+.menu_box_1>div:nth-child(1){
+    background-color: rgb(217,217,217);
+}
+.menu_box_1>div:nth-child(1):hover{
+    background-color: rgb(192,192,192);
+}
+.menu_box_1>div{
+    height: 40px;
+    padding: 0px 24px;
+    line-height: 40px;
+    font-size: 14px;
+}
+.menu_box_1>div:hover,.menu_box_2>div:hover,.menu_box_3>div:hover,.menu_box_4>div:hover{
+    background-color: rgb(242, 242, 242);
+}
+.menu_box_2{
+    padding: 8px 0px;
+}
+.menu_box_2>div{
+    height: 40px;
+    padding: 0px 24px;
+    line-height: 40px;
+    font-size: 14px;
+    
+}
+.menu_box_3{
+    padding: 8px 0px;
+    border-bottom: 1px solid lightgrey;
+}
+.menu_box_3>div{
+    height: 40px;
+    padding: 0px 24px;
+    line-height: 40px;
+    font-size: 14px;
+    
+}
+.menu_box_4{
+    /* height: 176px; */
+    padding: 8px 0px;
+    border-bottom: 1px solid lightgrey;
+}
+.menu_box_4>div{
+    height: 40px;
+    padding: 0px 24px;
+    line-height: 40px;
+    font-size: 14px;
+    
+}
+
+.menu_box_5>div {
+    padding: 16px 24px 0px;
+    font-size: 13px;
+}
+.menu_box_5>div:nth-child(4){
+    padding: 16px 24px;
+}
+.content_right{
+    width: 100%;
+    margin-top: 56px;
+}
+.ad{
+    height:251px;
+    background-color: lightseagreen;
+}
+.feed{
+    background-color: rgb(247, 244, 244);
+}
+
+.video_title{
+    height: 24px;
+    padding: 36px 0px 0px 36px;
+    font-size: 20px;
+}
+.videos{
+    padding: 24px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    box-sizing: border-box;
+}
+
+.videos>div{
+    /* width: 295.79px; */
+    height: 261.98px;
+    /* background-color: white; */
+    margin: 0px 8px 40px;
+
+}
+/* 이미지 첨부.. */
+.thumbnail1{
+    height: 166.38px;
+    background-image: url(./dist/v1.JPG);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.thumbnail2{
+    height: 166.38px;
+    background-image: url(./dist/v2.JPG);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.thumbnail3{
+    height: 166.38px;
+    background-image: url(./dist/v3.JPG);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.thumbnail4{
+    height: 166.38px;
+    background-image: url(./dist/v4.JPG);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.thumbnail5{
+    height: 166.38px;
+    background-image: url(./dist/v5.JPG);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.thumbnail6{
+    height: 166.38px;
+    background-image: url(./dist/v6.JPG);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.thumbnail7{
+    height: 166.38px;
+    background-image: url(./dist/v7.JPG);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.thumbnail8{
+    height: 166.38px;
+    background-image: url(./dist/v8.JPG);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.thumbnail{
+    height: 166.38px;
+    background-image: url(./dist/0.JPG);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+
+/* 이미지 첨부 끝 */
+.video_content{
+    height: 73.2px;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    padding-left: 10px;
+    padding-top:10px;
+
+}
+.v{
+    padding: 0px 24px 0px 0px;
+}
+.v_title{
+    font-size: 14px;
+    color:#303030;
+}
+.v_writer{
+    color:#606060;
+    font-size: 13.5px;
+}
+.v_info{
+    color:#606060;
+    font-size: 13.5px;
+}
+
+br{
+    display: none;
+}
+
+
+@media (max-width:1463px){
+    main{
+        grid-template-columns: 72px auto;
+    }
+    .menu_left{
+        width: 72px;
+        overflow-y: hidden;
+    }
+    .menu_box_1{
+        border-bottom: none;
+        position: fixed;
+        width: 72px;
+    }
+    .menu_box_1> div >i{
+        margin: 0 auto;
+    }
+    .menu_box_1>div{
+        /* height: 72px; */
+        font-size:10px;
+        padding: 16px 0px 20px;
+        text-align: center;
+        line-height: 20px;
+    }
+    .menu_box_2, .menu_box_3, .menu_box_4,.menu_box_5{
+        display:none;
+    }
+    hr, .hidden_box{
+        display: none;
+    }
+    br{
+        display: block;
+    }
+    .subscri{
+        margin-bottom: 0px;
+    }
+    .sub2{
+        border-top: none;
+        padding-top: 16px; 
+    }
+    .menu_box_1>div:nth-child(1){
+        background-color: white;
+    }
+}
+@media (max-width:1144px){
+    .videos{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+@media (max-width:888px){
+    .videos{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (max-width:810px){
+    main{
+        grid-template-columns: 0px 100%;
+    }
+    .menu_box_1{
+        display: none;
+    }
+
+}
+@media (max-width:654px){
+    nav{
+        grid-template-columns: 4fr 12fr 90fr repeat(5,40px);
+    }
+    #search_bar,#submit{
+        display: none;
+    }
+    .icon_search{
+        display: inline-block;
+    }
+}
+@media (max-width:500px){
+    .videos{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .feed{
+        padding-right: 60px;
+        padding-left: 60px;
+    }
+}
+

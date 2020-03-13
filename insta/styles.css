@@ -1,0 +1,82 @@
+:root{
+    --navHeight:60px;
+    --navColor: lightblue;
+    --mainMargin:calc((100vw - 1000px)/2);
+    --profileColor:lightyellow;
+    --storiesColor: rgb(49, 146, 179);
+    --controlBarColor: yellow;
+    --feedControlColor: lightgray;
+}
+@custom-media --lg-size(max-width:1000px);
+@custom-media --md-size(max-width:850px);
+nav{
+    height: var(--navHeight);
+    background-color: var(--navColor);
+    position: fixed;
+    width: 100vw;
+}
+body{
+    margin: 0;
+    padding: 0;
+
+}
+main{
+    margin: 0 var(--mainMargin);
+    /* background-color: cornflowerblue; */
+    /* height: 100vh; */
+}
+
+.profile{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    height: 250px;
+    background-color:var(--profileColor);
+    padding-top: var(--navHeight);
+}
+.flexbox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    background-color: rgb(131, 181, 212);
+    margin: 10px;
+    color:white;
+
+}
+.stories{
+    background-color: var(--storiesColor);
+    height: 150px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px,1fr));
+}
+.control-bar{
+    background-color: var(--controlBarColor);
+    display: grid;
+    grid-template-columns: repeat(3,100px);
+    justify-content: center;
+}
+.feed-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background-color: var(--feedControlColor);
+}
+.feed{
+    height: 300px;
+}
+
+@media(--lg-size){
+    main{
+        margin: 0;
+    }
+}
+/* 1000px이하로 작아지면 마진이 0이 된다. margin 0을 안해주게 되면margin: 0 calc((100vw - 1000px)/2); 로인해서 가로 스크롤이 생기고 크기가 커짐. */
+@media(--md-size){
+    .profile{
+        grid-template-columns: unset;
+        /*unset 등록된 설정 취소  */
+        grid-template-rows: 1fr 2fr;
+    }
+}
+.feed{
+    height: 32vw;
+}

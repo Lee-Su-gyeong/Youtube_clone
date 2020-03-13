@@ -1,0 +1,78 @@
+:root{
+    --navColor:lightblue;
+    --navHeight:56px;
+    
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    height: var(--navHeight);
+    background-color: var(--navColor);
+}
+main{
+    display: grid;
+    grid-template-columns:1fr 5fr;
+}
+.menu_left{
+    overflow-y: scroll;
+}
+.menu_box_1{
+    height: 370px;
+    background-color: lightcoral;
+}
+.menu_box_2{
+    height: 371.4px;
+    background-color: lightcyan;
+}
+.menu_box_3{
+    height: 211.4px;
+    background-color:lightslategray;
+}
+.menu_box_4{
+    height: 176px;
+    background-color:lightgreen;
+}
+.menu_box_5{
+    height: 200px;
+    background-color: lightsalmon;
+}
+.content_right{
+    width: 100%;
+}
+.ad{
+    height:251px;
+    background-color: lightseagreen;
+}
+.feed{
+    background-color: lime;
+    /* height: 3767.7px; */
+}
+.video_title{
+    height: 24px;
+    margin: 36px 0px 0px 24px;
+}
+.videos{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+.videos>div{
+    /* width: 295.79px; */
+    height: 261.98px;
+    background-color: white;
+    margin: 0px 8px 40px;
+
+}
+.thumbnail{
+    height: 166.38px;
+    background-color: yellow;
+
+}
+.video_content{
+    height: 73.2px;
+
+}
+
+
+/*# sourceMappingURL=/styles.8986bff4.css.map */

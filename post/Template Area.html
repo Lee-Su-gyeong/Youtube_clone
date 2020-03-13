@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .father {
+      display: grid;
+      grid-auto-rows: 200px;
+      grid-gap: 10px;
+      /* grid-template-areas: "header header header"
+                           "content content sidebar"
+                           "content content sidebar"
+                           "footer footer footer"; */
+
+                           /* "header header header"
+                           "content  header sidebar"
+                           "content content sidebar"
+                           "footer footer footer"; 
+                           header가 'ㅜ' 모양이므로 사각형이 되지 않는다. 사각형으로 만들지 못하면 깨진다.*/
+      /* grid-template-columns: 2fr 1fr 2fr 1fr; */
+      /* fr라는 단위가 상대적이라서 1fr*2=2fr 따라서 크기는 2배 1배 2배 1배로 나타나게 된다. 창을 줄여도 비율은 같음. */
+      /* grid-template-columns: repeat(4,1fr); */
+      /* 4개가 크기는 1배 */
+      /* grid-template-columns: minmax(400px,1fr) repeat(3,1fr); */
+      /* minmax(400px,1fr) minmax 400px로 지정했으므로 창의 크기를 줄였을때 400px이상 작아지지 않는다.  */
+      grid-template-columns: repeat(3, minmax(400px,1fr)) 1fr;
+      /* 3개는 minmax가 적용이 되고 나머지 하나만 크기가 작아짐.  */
+
+
+    }
+
+    .first {
+     
+      background-color : orange;
+    }
+
+    .second {
+     
+      background-color: yellowgreen;
+    }
+
+    .third {
+     
+      background-color: blueviolet;
+    }
+
+    .fourth {
+     
+      background-color: lightskyblue;
+    }
+
+    .box {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color:white;
+      font-size: 50px;
+  }
+  </style>
+</head>
+<body>
+  <div class="father">
+    <div class="first box">first</div>
+    <div class="second box">second</div>
+    <div class="third box">third</div>
+    <div class="fourth box">fourth</div>
+  </div>
+</body>
+</html>
